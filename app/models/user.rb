@@ -6,8 +6,15 @@ class User
   field :email_address, type: String
   field :first_name, type: String
   field :last_name, type: String
+  field :avatar_path, type: String
   before_save :hash_the_password
+  has_many :articles
+  validates_uniqueness_of :username
 
+  def passes_authentication?(password_to_check)
+    BCrypt::Password.new(self.hashed_password).is_password?(password_to_check)
+  end
+  
   private
     def hash_the_password
         unless self.hashed_password

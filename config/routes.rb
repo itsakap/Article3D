@@ -2,6 +2,9 @@ Article3D::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+  delete 'sign_out' => 'auths#destroy', :as => :auths
+  get 'sign_in' => 'auths#new', :as => :new_auth
+  resources :auths, only:[:create]
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
