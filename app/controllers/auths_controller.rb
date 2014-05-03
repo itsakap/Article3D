@@ -12,13 +12,15 @@ class AuthsController < ApplicationController
     if user.count > 0
       @user = user[0]
       if @user.passes_authentication?(params[:user][:password])
-        if @user.is_verified?
-          session[:user_id] = @user.id
-          redirect_to users_path
-        else
-          redirect_to new_auth_path
-          flash[:error] = "Please check your e-mail and verify your identity." #add button for resending e-mail
-        end
+        session[:user_id] = @user.id
+        redirect_to articles_path
+        # if @user.is_verified?
+        #   session[:user_id] = @user.id
+        #   redirect_to users_path
+        # else
+        #   redirect_to new_auth_path
+        #   flash[:error] = "Please check your e-mail and verify your identity." 
+        # end
       else
         redirect_to new_auth_path
         flash[:error] = 'Invalid username and/or password.  Please try again.'

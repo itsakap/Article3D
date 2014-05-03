@@ -1,5 +1,6 @@
 class User
   include Mongoid::Document
+  attr_accessor :password, :password_confirmation
   field :username, type: String
   field :hashed_password, type: String
   field :salt, type: String
@@ -14,7 +15,7 @@ class User
   def passes_authentication?(password_to_check)
     BCrypt::Password.new(self.hashed_password).is_password?(password_to_check)
   end
-  
+
   private
     def hash_the_password
         unless self.hashed_password

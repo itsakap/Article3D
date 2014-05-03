@@ -1,7 +1,7 @@
 Article3D::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  get 'sign_up' => 'users#new', :as => :new_user
   delete 'sign_out' => 'auths#destroy', :as => :auths
   get 'sign_in' => 'auths#new', :as => :new_auth
   resources :auths, only:[:create]
