@@ -1,1 +1,4 @@
-index.html.erb
+<h1>HERE ARE ALL THE ARTICLES</h1>
+<% @articles.each do |article| %>
+  <%= article.title %>
+<% end %>

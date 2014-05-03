@@ -18,15 +18,25 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    
+    @article = Article.new(article_params)
+    if @article.save
+      #current_user.articles.push(@article)
+      #!!!
+      redirect_to articles_path
+    end
   end
 
   def update
-    
+    if @article.update(article_params)
+      #redirect_to SOMETHING!!!
+    end
   end
 
   def destroy
-    
+    if current_user
+      @article.destroy
+      #redirect_to SOMETHING!!!
+    end
   end
   private
     def set_article
@@ -37,7 +47,7 @@ class ArticlesController < ApplicationController
       params.require(:article).permit(:title,:audio_file,:image_files,:printing_file,:video_file,:hypothesis,:description)
     end
 
-    def check_login
+    def require_login
       unless current_user
         redirect_to new_auth_path
       end
