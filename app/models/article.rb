@@ -9,4 +9,5 @@ class Article
   field :description, type: String
 
   belongs_to :user
+  belongs_to :category
 end
