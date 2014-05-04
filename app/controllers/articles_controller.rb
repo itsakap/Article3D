@@ -1,3 +1,4 @@
+require 'aws'
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   before_action :require_login
@@ -20,8 +21,7 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-      article_bucket = Bucket.find('articlethreedee')
-      #!!!
+      
       redirect_to articles_path
     end
   end
