@@ -3,7 +3,7 @@ Article3D::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
   post 'users' => 'users#create'
   root 'articles#index', :as => :articles
-  resources :articles, only:[:create]
+  post '/' => 'articles#create'
   get 'new_article' => 'articles#new', :as => :new_article
   get 'sign_up' => 'users#new', :as => :new_user
   delete 'sign_out' => 'auths#destroy', :as => :auths

@@ -1,3 +1,46 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/assets/Brandon_bld.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+    font-family: Brandon Grotesque;
+    background-color: #5d616b;
+}
+h2{
+  text-align: center;
+  font-weight: normal;
+  color:goldenrod;
+}
+label{
+  display:block;
+}
+.container{
+  background-color:white;
+  width:500px;
+  height:300px;
+  margin: 0 auto;
+  padding:1em;
+  border-radius:5px;
+  overflow-y: scroll;
+}
+input[type="text"], textarea{
+  display:block;
+  width:100%;
+}
+.submit input{
+
+ 
+  font-size:1.5em;
+}
+.submit input, #article_audio_file{
+  background-color:goldenrod;
+  border-radius:4px;
+   padding:0.5em;
+  font-family: Brandon Grotesque;
+
+}

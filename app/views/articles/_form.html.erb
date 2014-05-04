@@ -1,8 +1,24 @@
-<%= form_for(@article) do |a| %>
-  <%= a.label :post, "Title of experiment" %>
-  <%= a.text_field :title %>
-
-  <%= a.label :post, "Audio File" %>
-  <%= a.file_field :audio_file %>
-  <%= a.submit %>
+<h2>Create New Article</h2>
+<div class = "container">
+  <%= form_for(@article) do |a| %>
+  <div>
+    <%= a.label :post, "Title of experiment" %>
+    <%= a.text_field :title %>
+  </div>
+  <div class="audio-upload">
+    <%= a.label :post, "Audio File" %>
+    <%= a.file_field :audio_file %>
+  </div>
+  <div>
+    <%= a.label :post, "Hypothesis" %>
+    <%= a.text_area :hypothesis %>
+  </div>
+  <div>
+    <%= a.label :post, "Description" %>
+    <%= a.text_area :description %>
+  </div>
+  <div class="submit">
+    <%= a.submit %>
+  </div>
 <% end %>
+</div>
