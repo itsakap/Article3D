@@ -20,7 +20,7 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-      #current_user.articles.push(@article)
+      article_bucket = Bucket.find('articlethreedee')
       #!!!
       redirect_to articles_path
     end

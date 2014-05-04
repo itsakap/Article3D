@@ -19,7 +19,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'bcrypt-ruby'
 gem 'jquery-rails'
 #gem 'mustache', '~> 0.99.5'
-
+gem 'aws-s3'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
