@@ -18,6 +18,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'bcrypt-ruby'
 gem 'jquery-rails'
+gem 'rails_12factor'
 #gem 'mustache', '~> 0.99.5'
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'aws-sdk'
