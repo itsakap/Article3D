@@ -7,3 +7,5 @@
 <% if current_user %>
   <%= current_user.username %>
 <% end %>
+
+<%= link_to 'Sign Out', auths_path, {method: :delete} %>

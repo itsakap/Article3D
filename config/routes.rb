@@ -8,6 +8,7 @@ Article3D::Application.routes.draw do
   get 'sign_up' => 'users#new', :as => :new_user
   delete 'sign_out' => 'auths#destroy', :as => :auths
   get 'sign_in' => 'auths#new', :as => :new_auth
+  
   resources :auths, only:[:create]
 
   #add some ids down here for like shows and edits and shettt
