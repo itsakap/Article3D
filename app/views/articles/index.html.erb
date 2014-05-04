@@ -2,3 +2,8 @@
 <% @articles.each do |article| %>
   <%= article.title %>
 <% end %>
+
+<h1>THIS IS THE CURRENT USER</h1>
+<% if current_user %>
+  <%= current_user.username %>
+<% end %>

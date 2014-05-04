@@ -1,13 +1,17 @@
 Article3D::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  get 'articles' => 'articles#index', :as => :articles
+  post 'users' => 'users#create'
+  root 'articles#index', :as => :articles
   resources :articles, only:[:create]
   get 'new_article' => 'articles#new', :as => :new_article
   get 'sign_up' => 'users#new', :as => :new_user
   delete 'sign_out' => 'auths#destroy', :as => :auths
   get 'sign_in' => 'auths#new', :as => :new_auth
   resources :auths, only:[:create]
+
+  #add some ids down here for like shows and edits and shettt
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
