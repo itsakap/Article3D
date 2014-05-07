@@ -1,0 +1,28 @@
+// Place all the styles related to the Categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#categories{
+  li{
+    width:175px;
+    height:214px;
+    display:inline-block;
+  }
+}
+#astronomy{
+  background-image: url('Astronomy.png');
+}
+#biology{
+  background-image: url('Biology.png');
+}
+#chemistry{
+  background-image: url('Chemistry.png');
+}
+#engineering{
+  background-image: url('Mechanics.png');
+}
+#physics{
+  background-image: url('Physics.png');
+}
+#robotics{
+  background-image: url('Robotics.png');
+}

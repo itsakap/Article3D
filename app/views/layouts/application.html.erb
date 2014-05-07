@@ -8,8 +8,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id = "main">
+    <%= yield %>
+  </div>
+  <aside>
+    <ul class="browse-menu">
+      <li class="menu-recent nr">
+        <a href="/browse/recent/"></a>
+      </li>
+      <li class="menu-popular nr">
+        <a href="/browse/popular/"></a>
+      </li>
+      <li class="menu-friends nr">
+        <a href="/browse/friends/"></a>
+      </li>
+      <li class="menu-category nr">
+        <a href="/categories"></a>
+      </li>
+    </ul>
+  </aside>
+  <footer class = "clearfix">
+    <a class="browse nr" href="/browse/"></a>
+    <a class="request nr" href="/request/"></a>
+    <a class="create nr" href="/create/"></a>
+    <a class="account nr" href="/account/"></a>
+  </footer>
 </body>
 </html>

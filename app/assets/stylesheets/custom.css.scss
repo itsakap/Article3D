@@ -1,0 +1,63 @@
+aside{
+  width:310px;
+  float:right;
+  // position:absolute;
+  // right:0;
+  // top:0;
+  height:550px;
+  background: #d5d9e3;
+}
+#main{
+  float:left;
+  width:600px;
+}
+.menu-recent { 
+  background-image: url('RecentButton.svg');  
+}
+.menu-popular {  
+  background-image: url('PopularButton.svg');  
+}
+.menu-friends {
+  background-image: url('FriendsButton.svg');  
+}
+.menu-category {
+  background-image: url('CategoryButton.svg');  
+}
+
+
+footer {
+  height: 100px;
+  background-color: #5d616b;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+footer .browse {
+  background-image: url('BrowseButton.svg');
+  width:237px;
+}
+.request {  
+  background-image: url('RequestButton.svg');  
+}
+.create {
+  background-image: url('CreateButton.svg'); 
+}
+
+.account {
+  background-image: url('Article3D_logo.svg'); 
+  width: 307px;
+
+}
+.nr{
+  background-repeat:no-repeat;
+}
+footer a {
+  float:left;
+  height: 100px;
+  width:240px;
+  display:inline-block;
+}
+.browse-menu li{
+  height:100px;
+}

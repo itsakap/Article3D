@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Category.destroy_all
+
+categories = Category.create([{link:"Astronomy", launch_image:"astronomy"},
+  {link:"Biology",launch_image:"biology"},
+  {link:"Chemistry",launch_image:"chemistry"},
+  {link:"Engineering",launch_image:"engineering"},
+  {link:"Physics",launch_image:"physics"},
+  {link:"Robotics",launch_image:"robotics"}])
