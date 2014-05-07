@@ -1,6 +1,11 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#category-header{
+  background-image:url('CategoryHeader.svg');
+  height:107px;
+  width:714px;
+}
 #categories{
   li{
     width:175px;

@@ -8,13 +8,26 @@
   font-style: normal;
 }
 body{
-    font-family: Brandon Grotesque;
-    background-color: #5d616b;
+  font-family: Brandon Grotesque;
+  background-color: #fff;
 }
 h2{
   text-align: center;
   font-weight: normal;
   color:goldenrod;
+}
+h3{
+  font-weight:normal;
+}
+.column{
+  float:left;
+  width:30%;
+  margin:0 0.5em;
+}
+.column:nth-of-child(3){
+}
+.img-scroll{
+  background-color:orange;
 }
 label{
   display:block;
@@ -40,7 +53,10 @@ input[type="text"], textarea{
 .submit input, #article_audio_file{
   background-color:goldenrod;
   border-radius:4px;
-   padding:0.5em;
+  padding:0.5em;
   font-family: Brandon Grotesque;
 
+}
+#article_audio_file{
+  width:170px;
 }

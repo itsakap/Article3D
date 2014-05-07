@@ -1,14 +1,30 @@
+<div class="clearfix">
+  <div class="column">
+
+  <h3>Recent</h3>
+  <div class="img-scroll">
+    <%= render partial:"articles/recent.html.erb" %>
+  </div>
+
+</div>
 
 
+<div class="column">
 
-<h1>HERE ARE ALL THE ARTICLES</h1>
-<% @articles.each do |article| %>
-  <%= article.title %>
-<% end %>
+  <h3>Popular</h3>
+  <div class="img-scroll">
+    <%= render partial:"articles/popular.html.erb" %>
+  </div>
 
-<h1>THIS IS THE CURRENT USER</h1>
-<% if current_user %>
-  <%= current_user.username %>
-<% end %>
+</div>
 
-<%= link_to 'Sign Out', auths_path, {method: :delete} %>
+<div class="column">
+
+  <h3>Friends</h3>
+
+  <div class="img-scroll">
+    <%= render partial:"articles/friends.html.erb" %>
+  </div>
+
+</div>
+</div>

@@ -1,3 +1,4 @@
+
 aside{
   width:310px;
   float:right;
@@ -6,10 +7,18 @@ aside{
   // top:0;
   height:550px;
   background: #d5d9e3;
+  li{
+    width:215px;
+    height:100px;
+    a{
+      display:block;
+      height:100px;
+    }
+  }
 }
 #main{
   float:left;
-  width:600px;
+  width:700px;
 }
 .menu-recent { 
   background-image: url('RecentButton.svg');  
@@ -24,6 +33,16 @@ aside{
   background-image: url('CategoryButton.svg');  
 }
 
+#main-header{
+  background-color:#293125;
+  color:white;
+  a{
+    color:white;
+  }
+  a:visited{
+    color:white;
+  }
+}
 
 footer {
   height: 100px;
