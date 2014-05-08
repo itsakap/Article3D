@@ -1,0 +1,266 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("/assets/Brandon_bld.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 10, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/articles.css.scss */
+body {
+  font-family: Brandon Grotesque;
+  background-color: #fff;
+}
+
+/* line 14, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/articles.css.scss */
+h2 {
+  text-align: center;
+  font-weight: normal;
+  color: goldenrod;
+}
+
+/* line 19, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/articles.css.scss */
+h3 {
+  font-weight: normal;
+}
+
+/* line 22, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/articles.css.scss */
+.column {
+  float: left;
+  width: 30%;
+  margin: 0 0.5em;
+}
+
+/* line 29, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/articles.css.scss */
+.img-scroll {
+  background-color: orange;
+}
+
+/* line 32, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/articles.css.scss */
+label {
+  display: block;
+}
+
+/* line 35, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/articles.css.scss */
+.container {
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+/* line 44, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/articles.css.scss */
+input[type="text"], textarea {
+  display: block;
+  width: 100%;
+}
+
+/* line 48, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/articles.css.scss */
+.submit input {
+  font-size: 1.5em;
+}
+
+/* line 53, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/articles.css.scss */
+.submit input, #article_audio_file {
+  background-color: goldenrod;
+  border-radius: 4px;
+  padding: 0.5em;
+  font-family: Brandon Grotesque;
+}
+
+/* line 60, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/articles.css.scss */
+#article_audio_file {
+  width: 170px;
+}
+/* line 4, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/categories.css.scss */
+#category-header {
+  background-image: url("CategoryHeader.svg");
+  height: 107px;
+  width: 714px;
+}
+
+/* line 10, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/categories.css.scss */
+#categories li {
+  width: 175px;
+  height: 214px;
+  display: inline-block;
+}
+
+/* line 16, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/categories.css.scss */
+#astronomy {
+  background-image: url("Astronomy.png");
+}
+
+/* line 19, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/categories.css.scss */
+#biology {
+  background-image: url("Biology.png");
+}
+
+/* line 22, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/categories.css.scss */
+#chemistry {
+  background-image: url("Chemistry.png");
+}
+
+/* line 25, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/categories.css.scss */
+#engineering {
+  background-image: url("Mechanics.png");
+}
+
+/* line 28, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/categories.css.scss */
+#physics {
+  background-image: url("Physics.png");
+}
+
+/* line 31, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/categories.css.scss */
+#robotics {
+  background-image: url("Robotics.png");
+}
+/* line 2, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+aside {
+  width: 310px;
+  float: right;
+  height: 550px;
+  background: #d5d9e3;
+}
+/* line 10, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+aside li {
+  width: 215px;
+  height: 100px;
+}
+/* line 13, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+aside li a {
+  display: block;
+  height: 100px;
+}
+
+/* line 19, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+#main {
+  float: left;
+  width: 700px;
+}
+
+/* line 23, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+.menu-recent {
+  background-image: url("RecentButton.svg");
+}
+
+/* line 26, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+.menu-popular {
+  background-image: url("PopularButton.svg");
+}
+
+/* line 29, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+.menu-friends {
+  background-image: url("FriendsButton.svg");
+}
+
+/* line 32, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+.menu-category {
+  background-image: url("CategoryButton.svg");
+}
+
+/* line 36, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+#main-header {
+  background-color: #293125;
+  color: white;
+}
+/* line 39, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+#main-header a {
+  color: white;
+}
+/* line 42, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+#main-header a:visited {
+  color: white;
+}
+
+/* line 47, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+footer {
+  height: 100px;
+  background-color: #5d616b;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 55, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+footer .browse {
+  background-image: url("BrowseButton.svg");
+  width: 237px;
+}
+
+/* line 59, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+.request {
+  background-image: url("RequestButton.svg");
+}
+
+/* line 62, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+.create {
+  background-image: url("CreateButton.svg");
+}
+
+/* line 66, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+.account {
+  background-image: url("Article3D_logo.svg");
+  width: 307px;
+}
+
+/* line 71, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+.nr {
+  background-repeat: no-repeat;
+}
+
+/* line 74, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+footer a {
+  float: left;
+  height: 100px;
+  width: 240px;
+  display: inline-block;
+}
+
+/* line 80, /home/adamhkaplan/Documents/game-hack/Article3D-adam/app/assets/stylesheets/custom.css.scss */
+.browse-menu li {
+  height: 100px;
+}
+body{
+  margin:0;
+}
+ul{
+  list-style: none;
+}
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after{
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.row:after,
+.clearfix:after{
+  clear: both;
+}
+
+.row,
+.clearfix {
+  zoom: 1;
+}
