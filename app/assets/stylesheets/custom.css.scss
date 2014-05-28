@@ -32,6 +32,18 @@ aside{
 .menu-category {
   background-image: url('CategoryButton.svg');  
 }
+.menu-recent:active { 
+  background-image: url('RecentButton_Inactive.svg');  
+}
+.menu-popular:active {  
+  background-image: url('PopularButton_Inactive.svg');  
+}
+.menu-friends:active {
+  background-image: url('FriendsButton_Inactive.svg');  
+}
+.menu-category:active {
+  background-image: url('CategoryButton_Inactive.svg');  
+}
 
 #main-header{
   background-color:#293125;
