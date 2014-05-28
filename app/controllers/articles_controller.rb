@@ -23,7 +23,10 @@ class ArticlesController < ApplicationController
     if @article.save
       
       redirect_to articles_path
+    else
+      redirect_to new_article_path
     end
+
   end
 
   def update
@@ -44,7 +47,7 @@ class ArticlesController < ApplicationController
     end
 
     def article_params
-      params.require(:article).permit(:title,:audio_file,:image_files,:printing_file,:video_file,:hypothesis,:description)
+      params.require(:article).permit(:title,:audio_file,:printing_file,:video_file,:hypothesis,:description, pictures_attributes: [:attachment])
     end
 
     def require_login

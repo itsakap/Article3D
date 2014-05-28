@@ -11,6 +11,7 @@ class User
   field :avatar_path, type: String
   before_save :hash_the_password
   has_many :articles
+  
   validates_uniqueness_of :username
 
   def passes_authentication?(password_to_check)

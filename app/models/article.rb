@@ -12,10 +12,15 @@ class Article
 
   belongs_to :user
   belongs_to :category
+
+  embeds_many :pictures, :cascade_callbacks => true, :validate => false
+  accepts_nested_attributes_for :pictures
+  # attr_accessible :pictures_attributes
   
   has_mongoid_attached_file :audio_file,
     :path => ':attachment/:id/:style.:extension',
     :storage => :s3,
     :bucket => "articlethreedee"
   do_not_validate_attachment_file_type :audio_file
+
 end

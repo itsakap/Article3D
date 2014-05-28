@@ -5,6 +5,10 @@
     <%= a.label :post, "Title of experiment" %>
     <%= a.text_field :title %>
   </div>
+  <div class="picture-upload">
+    <%= a.label :post, "Picture File" %>
+    <%= a.file_field "article_pictures_attributes_attachment", multiple: true, name:'article[pictures_attributes[][attachment]' %>
+  </div>
   <div class="audio-upload">
     <%= a.label :post, "Audio File" %>
     <%= a.file_field :audio_file %>
