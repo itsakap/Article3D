@@ -1,3 +1,5 @@
 == README
 
-This project aims to allow children to share with each other cool science articles that they find.  In a (hopefully not dystopian) future where everyone has convenient access to 3D printers, a 3D-printed object(s) may accompany an article.  As a child, I would like to 3D-print these supplementary materials so that I may enhance my learning experience.
+This project allows children to share with each other cool science articles.
+
+In a (hopefully not dystopian) future where everyone has convenient access to 3D printers, a 3D-printed object(s) may accompany an article.  As a child, I would like to 3D-print these supplementary materials so that I may enhance my learning experience.
