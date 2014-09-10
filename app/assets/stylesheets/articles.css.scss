@@ -58,13 +58,13 @@ label{
 
 }
 #article_audio_file{
-  width:170px;
+  width:570px;
 }
 .custom-file-input::-webkit-file-upload-button {
   visibility: hidden;
 }
 .custom-file-input::before {
-  content: 'Select some files';
+  content: "Test";
   display: inline-block;
   background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
   border: 1px solid #999;

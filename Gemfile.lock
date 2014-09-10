@@ -56,8 +56,8 @@ GEM
     connection_pool (2.0.0)
     erubis (2.7.0)
     execjs (2.0.2)
-    font-awesome-sass (4.2.0)
-      sass (~> 3.2)
+    font-awesome-rails (4.2.0.0)
+      railties (>= 3.2, < 5.0)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -152,7 +152,7 @@ DEPENDENCIES
   aws-sdk
   bcrypt-ruby
   coffee-rails (~> 4.0.0)
-  font-awesome-sass
+  font-awesome-rails
   jbuilder (~> 1.2)
   jquery-rails
   mongoid!
