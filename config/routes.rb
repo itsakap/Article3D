@@ -1,6 +1,7 @@
 Article3D::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+  get '/' => redirect("browse")
   post 'users' => 'users#create'
   get 'browse' => 'articles#index', :as => :articles
   post 'browse' => 'articles#create'
